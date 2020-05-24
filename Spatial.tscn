@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://platform_objects/BlockLarge.tscn" type="PackedScene" id=1]
 [ext_resource path="res://platform_objects/Bridge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Character.tscn" type="PackedScene" id=3]
+[ext_resource path="res://platform_objects/BridgeRamp.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Crate.tscn" type="PackedScene" id=5]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.25098, 0.364706, 0.0745098, 1 )
@@ -91,20 +93,69 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5 )
 
 [node name="Bridge" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.0487392, 3 )
+
+[node name="Bridge5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -0.5, 3 )
+
+[node name="Bridge6" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.5, 3 )
+
+[node name="Bridge7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.5, -2 )
+
+[node name="Bridge8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -0.5, -2 )
 
 [node name="Bridge3" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.0382669, -2 )
 
 [node name="Bridge2" parent="." instance=ExtResource( 2 )]
-transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 2, 0, -0.5 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 2, 0.0627218, -0.5 )
 
 [node name="Bridge4" parent="." instance=ExtResource( 2 )]
-transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -3, 0, -0.5 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -3, 0.0468216, -0.5 )
 
 [node name="Character" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1.5, 4.09894 )
 
-[node name="Camera" type="Camera" parent="Character"]
-transform = Transform( 0.999797, -0.00408605, 0.0197236, -0.00866309, 0.796783, 0.604203, -0.0181842, -0.604251, 0.796586, 0.0307841, 3.69978, 3.82834 )
-fov = 83.4995
+[node name="FirstPerson" type="Camera" parent="Character"]
+transform = Transform( 0.999797, 0.00922267, 0.0179069, -0.00866309, 0.999479, -0.0310792, -0.0181842, 0.0309178, 0.999357, 0.00293207, 0.123943, -0.429771 )
+fov = 80.9189
+
+[node name="ThirdPerson" type="Camera" parent="Character"]
+transform = Transform( 0.999797, 0.00145409, 0.0200898, -0.00866309, 0.931472, 0.363711, -0.0181842, -0.363811, 0.931295, 0.0525126, 0.938825, 1.90803 )
+fov = 60.8249
+
+[node name="BridgeRamp" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 2.07555 )
+
+[node name="BridgeRamp3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2.08203 )
+
+[node name="BridgeRamp5" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -1.50996e-007, 0, 1, 0, 1.50996e-007, 0, -1, 3, 0, -2.08615 )
+
+[node name="BridgeRamp8" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -1.50996e-007, 0, 1, 0, 1.50996e-007, 0, -1, -2, 0, -2.06968 )
+
+[node name="BridgeRamp2" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -2.01692, 0, 2 )
+
+[node name="BridgeRamp4" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7.54979e-008, 0, 1, 0, 1, 0, -1, 0, 7.54979e-008, 2.03494, 0, 2.9924 )
+
+[node name="BridgeRamp6" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7.54979e-008, 0, 1, 0, 1, 0, -1, 0, 7.54979e-008, 2.03915, 0, -2.0076 )
+
+[node name="BridgeRamp7" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -2.02735, 0, -3.0076 )
+
+[node name="Crate" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25244, 1.29279 )
+
+[node name="Crate2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.518174, 1.25244, 1.29279 )
+
+[node name="Crate3" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.518174, 1.76109, 1.29279 )

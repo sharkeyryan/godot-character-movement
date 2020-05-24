@@ -1,14 +1,16 @@
 extends KinematicBody
 
 var gravity = Vector3.DOWN * 12
-var speed = 4
+var speed = 3
 var jump_speed = 6
-var spin = 0.1
+var spin = 0.060
 
 var velocity = Vector3()
 var jump = false
 
 func _physics_process(delta):
+
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	velocity += gravity * delta
 	get_input()
 	velocity = move_and_slide(velocity, Vector3.UP)
@@ -32,6 +34,14 @@ func get_input():
 	jump = false
 	if Input.is_action_just_pressed("jump"):
 		jump = true
+		
+	if Input.is_action_just_pressed("camera_switch"):
+		print_debug($FirstPerson.is_current())
+		
+		if $FirstPerson.is_current():
+	    	$ThirdPerson.make_current()
+		elif $ThirdPerson.is_current():
+	    	$FirstPerson.make_current()
 	
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
