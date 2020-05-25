@@ -9,15 +9,13 @@ var velocity = Vector3()
 var jump = false
 
 func _physics_process(delta):
-
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	velocity += gravity * delta
 	get_input()
 	velocity = move_and_slide(velocity, Vector3.UP)
 	if jump and is_on_floor():
 		velocity.y = jump_speed
 	
-func get_input():
+func get_input():	
 	var vy = velocity.y
 	velocity = Vector3()
 	
@@ -35,14 +33,28 @@ func get_input():
 	if Input.is_action_just_pressed("jump"):
 		jump = true
 		
-	if Input.is_action_just_pressed("camera_switch"):
-		print_debug($FirstPerson.is_current())
-		
+	if Input.is_action_just_pressed("camera_switch"):		
 		if $FirstPerson.is_current():
 	    	$ThirdPerson.make_current()
 		elif $ThirdPerson.is_current():
 	    	$FirstPerson.make_current()
+			
+	capture_mouse()
+	go_fullscreen()
 	
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-lerp(0, spin, event.relative.x/20))
+		
+func capture_mouse():
+	if Input.is_action_just_pressed("capture_mouse"):
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		elif Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		pass
+		
+func go_fullscreen():
+	if Input.is_action_just_pressed("go_fullscreen"):
+		OS.window_fullscreen = !OS.window_fullscreen
+		pass
