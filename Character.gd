@@ -1,15 +1,17 @@
 extends KinematicBody
 
-var gravity = Vector3.DOWN * 12
+var gravity = Vector3.DOWN * 30
 var speed = 3
 var jump_speed = 8
 var jetpack_speed = 10
-var spin = 0.035
+var spin = 0.025
 
 var velocity = Vector3()
 var jump = false
 var jetpack = false
 var settings_loaded = false
+
+const BULLET = preload("res://Bullet.tscn")
 
 func _ready():
 	if settings_loaded == false:
@@ -38,6 +40,11 @@ func get_input():
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-lerp(0, spin, event.relative.x/20))
+		
+	if Input.is_action_just_pressed("shoot"):
+		var bullet = BULLET.instance()
+		bullet.start($Position3D.global_transform)
+		get_parent().add_child(bullet)
 		
 func process_jump_input():
 	jump = false

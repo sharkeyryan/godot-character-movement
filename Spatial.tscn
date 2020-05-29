@@ -36,15 +36,15 @@ material/0 = null
 shape = SubResource( 3 )
 
 [node name="Character" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1.25908, 4.09894 )
+transform = Transform( -0.0516281, 0, 0.998666, 0, 1, 0, -0.998666, 0, -0.0516281, 4.67355, 1.25908, 4.69803 )
 
 [node name="FirstPerson" type="Camera" parent="Character"]
-transform = Transform( 0.999797, 0.00922267, 0.0179069, -0.00866309, 0.999479, -0.0310792, -0.0181842, 0.0309178, 0.999357, 0.00293207, 0.123943, -0.429771 )
-fov = 80.9189
+transform = Transform( 0.999797, 0.00932217, 0.0178553, -0.00866309, 0.999291, -0.0366402, -0.0181842, 0.0364781, 0.999169, 0.00808048, 0.189957, -0.178157 )
+fov = 75.9375
 
 [node name="ThirdPerson" type="Camera" parent="Character"]
 transform = Transform( 0.999797, 0.00145409, 0.0200898, -0.00866309, 0.931472, 0.363711, -0.0181842, -0.363811, 0.931295, 0.0525126, 0.938825, 1.90803 )
-fov = 60.8249
+fov = 57.6987
 
 [node name="BlockLarge" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 3 )
@@ -154,22 +154,43 @@ transform = Transform( 7.54979e-008, 0, 1, 0, 1, 0, -1, 0, 7.54979e-008, 2.03915
 transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -2.02735, 0, -3.0076 )
 
 [node name="Crate" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25244, 1.29279 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.772657, 1.25244, 1.72215 )
+
+[node name="Crate26" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.772657, 1.25244, 3.2628 )
+
+[node name="Crate33" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.17713, 1.25244, -3.14265 )
+
+[node name="Crate48" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.834573, 1.25244, -3.14265 )
+
+[node name="Crate49" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0586283, 1.25244, 4.71283 )
+
+[node name="Crate50" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.29242, 1.25244, 0.82182 )
 
 [node name="Crate2" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.518174, 1.25244, 1.29279 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.897976, 1.25244, 3.29808 )
 
 [node name="Crate4" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.518174, 1.25244, -0.621923 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.836227, 1.25244, -3.31565 )
 
 [node name="Crate8" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.518174, 1.25244, 0.244655 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47783, 1.25244, 3.29 )
+
+[node name="Crate31" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.37835, 1.25244, 4.72642 )
+
+[node name="Crate46" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.90171, 1.25244, 4.72642 )
 
 [node name="Crate16" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35315, 1.25244, 0.244655 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.73989, 1.25244, 0.79883 )
 
 [node name="Crate20" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35315, 1.25244, -1.59776 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19049, 1.25244, -1.04156 )
 
 [node name="Crate29" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16724, 1.25244, -1.59776 )
@@ -177,74 +198,65 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16724, 1.25244, -1.59776 )
 [node name="Crate30" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16724, 1.25244, 0.65413 )
 
-[node name="Crate39" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.89224, 1.25244, 0.65413 )
-
 [node name="Crate45" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.89224, 1.25244, -1.99597 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.19748, 1.25244, -3.87535 )
 
 [node name="Crate6" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.10256, 1.25244, -0.621923 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.72307, 1.25244, -0.800765 )
 
 [node name="Crate11" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.10256, 1.25244, 0.244655 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.258201, 1.25244, -0.154236 )
 
-[node name="Crate48" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.10256, 2.72844, 0.244655 )
-
-[node name="Crate53" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.10256, 2.72844, 0.393049 )
+[node name="Crate14" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.746289, 1.25244, -0.154236 )
 
 [node name="Crate13" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.267578, 1.25244, 0.244655 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25708, 1.25244, 0.355424 )
+
+[node name="Crate23" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.745167, 1.25244, 0.355424 )
 
 [node name="Crate19" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.267578, 1.25244, -1.59776 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.835714, 1.25244, -1.72184 )
 
 [node name="Crate27" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78797, 1.25244, -1.59776 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.71419, 1.25244, -3.7144 )
 
 [node name="Crate34" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78797, 1.25244, 0.65413 )
-
-[node name="Crate36" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.25244, 0.65413 )
-
-[node name="Crate44" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.25244, -1.99597 )
-
-[node name="Crate3" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.518174, 1.76109, 1.29279 )
-
-[node name="Crate5" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.518174, 1.76109, -0.621923 )
-
-[node name="Crate12" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35315, 1.76109, -0.621923 )
-
-[node name="Crate18" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35315, 1.76109, -2.46434 )
-
-[node name="Crate26" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16724, 1.76109, -2.46434 )
-
-[node name="Crate33" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16724, 1.76109, -0.212448 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.72401, 1.25244, 3.12602 )
 
 [node name="Crate37" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.89224, 1.76109, -0.212448 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.21039, 1.25244, 3.12602 )
+
+[node name="Crate36" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.25244, 2.7422 )
+
+[node name="Crate44" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.25244, -1.87949 )
+
+[node name="Crate3" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.897976, 1.76109, 3.29808 )
+
+[node name="Crate5" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.836227, 1.76109, -3.31565 )
 
 [node name="Crate43" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.89224, 1.76109, -2.86255 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.61321, 1.2793, -3.23737 )
 
 [node name="Crate9" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.518174, 1.76109, 0.244655 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47783, 1.76109, 3.29 )
+
+[node name="Crate24" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.37835, 1.76109, 4.72642 )
+
+[node name="Crate39" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.90171, 1.76109, 4.72642 )
 
 [node name="Crate17" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35315, 1.76109, 0.244655 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.73989, 1.76109, 0.79883 )
 
 [node name="Crate22" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35315, 1.76109, -1.59776 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19049, 1.76109, -1.04156 )
 
 [node name="Crate25" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16724, 1.76109, -1.59776 )
@@ -252,62 +264,41 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16724, 1.76109, -1.59776 )
 [node name="Crate32" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16724, 1.76109, 0.65413 )
 
-[node name="Crate38" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.89224, 1.76109, 0.65413 )
-
 [node name="Crate42" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.89224, 1.76109, -1.99597 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.19748, 1.76109, -3.87535 )
 
 [node name="Crate7" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.10256, 1.76109, -0.621923 )
-
-[node name="Crate14" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.267578, 1.76109, -0.621923 )
-
-[node name="Crate23" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.267578, 1.76109, -2.46434 )
-
-[node name="Crate24" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78797, 1.76109, -2.46434 )
-
-[node name="Crate31" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78797, 1.76109, -0.212448 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.72307, 1.76109, -0.800765 )
 
 [node name="Crate40" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.76109, -0.212448 )
-
-[node name="Crate46" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.76109, -2.86255 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.2831, -0.816794 )
 
 [node name="Crate10" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 1.10256, 1.76109, 0.244655 )
+transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 0.258201, 1.76109, -0.154236 )
 
-[node name="Crate50" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 1.10256, 3.23709, 0.244655 )
-
-[node name="Crate51" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 1.10256, 3.23709, 0.393049 )
+[node name="Crate12" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 0.746289, 1.76109, -0.154236 )
 
 [node name="Crate15" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 0.267578, 1.76109, 0.244655 )
+transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 0.25708, 1.76109, 0.355424 )
 
-[node name="Crate49" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 0.267578, 3.23709, 0.244655 )
-
-[node name="Crate52" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 0.267578, 3.23709, 0.393049 )
+[node name="Crate18" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.999957, -0.00930629, 0, 0.00930629, 0.999957, 0, 0, 0, 1, 0.745167, 1.76109, 0.355424 )
 
 [node name="Crate21" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.267578, 1.76109, -1.59776 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.835714, 1.76109, -1.72184 )
 
 [node name="Crate28" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78797, 1.76109, -1.59776 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.71419, 1.76109, -3.7144 )
 
 [node name="Crate35" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78797, 1.76109, 0.65413 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.72401, 1.76109, 3.12602 )
+
+[node name="Crate38" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.21039, 1.76109, 3.12602 )
 
 [node name="Crate41" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.76109, 0.65413 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.76109, 2.7422 )
 
 [node name="Crate47" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.76109, -1.99597 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27151, 1.76109, -1.87478 )
