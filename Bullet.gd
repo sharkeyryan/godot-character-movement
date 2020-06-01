@@ -1,4 +1,4 @@
-extends Area
+extends RigidBody
 
 var speed = 15
 var velocity = Vector3()
@@ -17,7 +17,7 @@ func _process(delta):
 	transform.origin += velocity * delta
 	
 func _on_Bullet_body_entered(body):
-	if body is StaticBody:
+	if body is CollisionShape:
 		queue_free()
 		
 func _on_Timer_timeout():

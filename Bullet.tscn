@@ -6,7 +6,7 @@
 
 [sub_resource type="SphereMesh" id=2]
 
-[node name="Bullet" type="Area"]
+[node name="Bullet" type="RigidBody"]
 script = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]

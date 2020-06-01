@@ -4,7 +4,7 @@ var gravity = Vector3.DOWN * 30
 var speed = 3
 var jump_speed = 8
 var jetpack_speed = 10
-var spin = 0.025
+const MOUSE_SENSITIVITY = 0.002
 
 var velocity = Vector3()
 var jump = false
@@ -38,8 +38,13 @@ func get_input():
 	velocity.y = vy
 	
 func _unhandled_input(event):
-	if event is InputEventMouseMotion:
-		rotate_y(-lerp(0, spin, event.relative.x/20))
+	# Horizontal mouse look
+	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+		rotation.y -= event.relative.x * MOUSE_SENSITIVITY
+
+	# Vertical mouse look, clamped to -90..90 degrees
+	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+		rotation.x = clamp(rotation.x - event.relative.y * MOUSE_SENSITIVITY, deg2rad(-90), deg2rad(90))
 		
 	if Input.is_action_just_pressed("shoot"):
 		var bullet = BULLET.instance()
@@ -101,3 +106,7 @@ func load_settings():
 	OS.window_fullscreen = false
 	settings_loaded = true
 	pass
+	
+func _exit_tree():
+	# Restore the mouse cursor upon quitting
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
