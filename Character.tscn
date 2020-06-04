@@ -25,9 +25,10 @@ material/0 = SubResource( 2 )
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 3 )
 
-[node name="MeshInstance2" type="MeshInstance" parent="."]
-transform = Transform( 0.5, 0, 0, 0, 0.117569, 0.485981, 0, -0.485981, 0.117569, 0, 0.207644, -0.0813308 )
+[node name="ArrowPointer" type="MeshInstance" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.0881773, 0.492163, 0, -0.492163, 0.0881773, 0, 0.203455, -0.0820812 )
 mesh = SubResource( 4 )
 material/0 = null
 
 [node name="Position3D" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.964311, -0.264773, 0, 0.264773, 0.964311, 0, 0.0743269, -0.226748 )

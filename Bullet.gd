@@ -1,8 +1,8 @@
 extends RigidBody
 
-var speed = 15
+var speed = 20
 var velocity = Vector3()
-var gravity = Vector3.DOWN * 15
+var gravity = Vector3.DOWN * 25
 
 onready var timer = get_node("Timer")
 

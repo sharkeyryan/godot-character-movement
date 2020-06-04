@@ -1,6 +1,6 @@
 extends KinematicBody
 
-var gravity = Vector3.DOWN * 15
+var gravity = Vector3.DOWN * 25
 var speed = 3
 var jump_speed = 8
 var jetpack_speed = 10
